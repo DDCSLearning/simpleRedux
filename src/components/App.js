@@ -30,7 +30,7 @@ export default class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <CreatePoll updatePolls={(e)=> this.updatePolls(e)}/>
-        <DisplayPolls/>
+        <DisplayPolls state={this.state}/>
       </div>
     );
   }
