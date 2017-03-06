@@ -3,6 +3,8 @@ import logo from '../logo.svg';
 import '../App.css';
 
 import CreatePoll from './CreatePoll';
+import DisplayPolls from './DisplayPolls';
+
 
 class App extends Component {
   render() {
@@ -13,6 +15,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <CreatePoll />
+        <DisplayPolls/>
       </div>
     );
   }
