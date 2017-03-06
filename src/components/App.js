@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../App.css';
 
+import reducer from '../ducks';
+
 import CreatePoll from './CreatePoll';
 import DisplayPolls from './DisplayPolls';
+
 
 
 export default class App extends Component {
@@ -20,7 +23,6 @@ export default class App extends Component {
     this.setState({
       polls: polls
     });
-    console.info(event, this.state.polls);
   }
   render() {
     return (
